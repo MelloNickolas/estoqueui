@@ -8,7 +8,13 @@ import { Produtos } from 'src/app/core/model';
 })
 export class ProdutoComponent implements OnInit {
 
-  produto: Produtos[] =[]
+  produto: Produtos[] =[
+    {idProdutos: 1, nomeProdutos: 'Chuteira'},
+    {idProdutos: 2, nomeProdutos: 'Volante'},
+    {idProdutos: 3, nomeProdutos: 'Rimel'},
+    {idProdutos: 4, nomeProdutos: 'Camisa do Brasil'},
+    {idProdutos: 5, nomeProdutos: 'Óculos'}
+  ]
   displayedColumns = ['idProdutos','nomeProdutos']
 
   constructor() { }
